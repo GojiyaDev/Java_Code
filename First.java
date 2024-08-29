@@ -33,3 +33,54 @@ class _parse{
     }
 }
 */
+
+//Methods for Conversion
+/**
+class _tostring{
+  public static void main(String[] args){
+    Integer a = 100;
+    Double d = 67.23;
+    Boolean b = true;
+    String str = a.toString();
+    System.out.println(str);
+    str = d.toString();
+    System.out.println(str);
+    str = b.toString();
+    System.out.print(str);
+    }
+}*/
+
+//Methods for Formatting
+/**
+class radix{
+  public static void main(String[] args){
+    int a = 12;
+    String str = Integer.toHexString(a);
+    System.out.println(str);
+    int b = Integer.parseInt(str, 16);
+    System.out.println(b);
+    System.out.println(Integer.parseInt("12", 8));
+    System.out.println(Integer.parseInt("12", 10)); 
+    }
+}*/
+//Static Field Example
+/**
+class B{
+  int a = 0;
+  void fun(){
+    a++;
+    }
+}
+class A{
+  public static void main(String[] arg){
+    B b1 = new B();
+    b1.fun();
+    B b2 = new B();
+    b2.fun();
+    B b3 = new B();
+    b3.fun();
+    System.out.println("a = "+ b1.a);
+    System.out.println("a = "+ b2.a);
+    System.out.println("a = "+ b3.a);
+  }
+}*/
