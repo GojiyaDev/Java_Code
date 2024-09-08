@@ -29,3 +29,49 @@ class BreakGoto {
         }
     }
 }
+
+//Continue Statement
+class Continue {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            System.out.print(i + " ");
+            
+            if (i % 2 == 0) {
+                continue;
+            }
+            
+            System.out.println("");
+        }
+    }
+}
+
+//Continue Label pattern 
+class ContinueLabel {
+    public static void main(String[] args) {
+        outer: for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                if (j > i) {
+                    System.out.println();
+                    continue outer;
+                }
+                System.out.print(" " + (i * j));
+            }
+        }
+    }
+}
+
+//Return Statement
+class Return {
+    public static void main(String[] args) {
+        boolean t = true;
+        
+        System.out.println("Before the return statement");
+        
+        if (t) {
+            return; // Exits the method early
+        }
+        
+        // This line will never be executed
+        System.out.println("This won't execute.");
+    }
+}
