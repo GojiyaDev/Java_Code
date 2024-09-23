@@ -98,4 +98,23 @@ class MainClass {
         }
     }
 }
+//Interface 5
+class A {
+    interface B {
+        void interface_B();
+    }
+}
+
+class C implements A.B {
+    public void interface_B() {
+        System.out.println("Interface nested inside class");
+    }
+}
+
+class Nested_Interface1 {
+    public static void main(String[] args) {
+        C obj = new C();
+        obj.interface_B();
+    }
+}
 
